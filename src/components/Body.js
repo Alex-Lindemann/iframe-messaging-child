@@ -8,7 +8,7 @@ function getReturnUrlBase() {
     if (window.location.origin === "http://localhost:3001") {
         return 'http://localhost:3000';
     }
-    return 'https://'
+    return 'https://iframe-messaging-parent.herokuapp.com';
 }
 
 export default function Body() {
