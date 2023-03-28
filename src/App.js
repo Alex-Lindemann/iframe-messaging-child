@@ -12,19 +12,17 @@ window.addEventListener("message", (event) => {
 
 
 function App() {
-
   return (
     <div className="App">
       <div className="App-header">
         <Routes>
           <Route
-            path="/"
+            path="/*"
             element={<><SimpleBottomNavigation /><Body /></>}
           />
-
           <Route
-            path="/iframe"
-            element={<><Body /></>}
+            path="/iframe/*"
+            element={<Body />}
           />
         </Routes>
       </div>
